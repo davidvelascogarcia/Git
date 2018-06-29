@@ -15,7 +15,7 @@ El mantenimiento del software **Git** está actualmente (2009) supervisado por J
 
 ## Sintaxis
 
-Para más información sobre la sintaxis del control de versiones con *Git*, consultar :[Sintaxis Git](./Sintaxis-Git.md).
+Para más información sobre la sintaxis del control de versiones con *Git*, consultar :[Sintaxis Git](./sintaxis.md).
 
 ## Enlaces de interés
 

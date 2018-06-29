@@ -1,33 +1,27 @@
 # Control de versiones: Git
-## Sintaxis: Git
 
-Listado de recetas para la sintaxis en el control de versiones con Git.
-
-### TABLA DE CONTENIDOS
-
-	1. Inicialización de proyecto
-	2. Registrar cambios
-	3. Hacer un commit
-	4. Envío de cambios
-	5. Enlazar repositorio local con remoto
-	6. Creación de ramas
-	7. Borrar ramas
-	8. Actualizar y fusionar
-	9. Etiquetas
+- [Inicialización de proyectos](#inicialización-de-proyectos)
+- [Registro de cambios](#registro-de-cambios)
+- [Commit](#commit)
+- [Subir cambios](#subir-cambios)
+- [Enlace con repositorios remotos](#enlace-con-repositorios-remotos)
+- [Creación de ramas](#creación-de-ramas)
+- [Borrado de ramas](#borrado-de-ramas)
+- [Actualización y fusión de ramas](#actualización-y-fusión-de-ramas)
+- [Etiquetas](#etiquetas)
 
 
-
-#### Descripción del contenido
-
-	1. Inicialización de proyecto
+## Inicialización de proyectos
 
 Crea un directorio nuevo, ábrelo y ejecuta.
 
 `git init`
 
-	2. Registrar cambios
+
+## Registro de cambios
 
 Puedes registrar cambios usando:
+
 `git add <filename>`
 
 Para todo el directorio:
@@ -35,13 +29,14 @@ Para todo el directorio:
 `git add -A`
 
 
-	3. Hacer un commit
+## Commit
 	
 `git commit -m "Commit message"`
 
 Ahora el archivo esta incluído en el HEAD, pero aún no en tu repositorio remoto.
 
-	4. Envío de cambios
+
+## Subir cambios
 	
 
 Tus cambios están ahora en el HEAD de tu copia local. Para enviar estos cambios a tu repositorio remoto ejecuta:
@@ -54,7 +49,7 @@ Si se desea enviar a la rama en la que se encuentra, únicamente ejecutar:
 `git push`
 
 
-	5. Enlazar repositorio local con remoto
+## Enlace con repositorios remotos
 	
 Si no se ha clonado un repositorio ya existente y quieres conectar tu repositorio local a un repositorio remoto, usa:
 
@@ -62,7 +57,9 @@ Si no se ha clonado un repositorio ya existente y quieres conectar tu repositori
 
 Ahora podrás subir tus cambios al repositorio remoto seleccionado.
 
-	6. Creación de ramas
+
+
+## Creación de ramas
 
 Las ramas son utilizadas para desarrollar funcionalidades aisladas unas de otras. La rama master es la rama "por defecto" cuando creas un repositorio. Crea nuevas ramas durante el desarrollo y fusiónalas a la rama principal cuando termines.
 	
@@ -74,7 +71,8 @@ Vuelve a la rama principal.
 
 `git checkout master`
 
-	7. Borrar ramas
+
+## Borrado de ramas
 	
 Borra la rama:
 
@@ -83,8 +81,9 @@ Borra la rama:
 Una rama nueva no estará disponible para los demás a menos que subas (push) la rama a tu repositorio remoto.
 
 `git push origin <branch>`
+
 	
-    8. Actualizar y fusionar
+## Actualización y fusión de ramas
     
 Actualiza y fusiona:
 
@@ -105,20 +104,18 @@ Antes de fusionar los cambios, puedes revisarlos usando
 
 `git diff <source_branch> <target_branch>`
 
-	9. Etiquetas
+## Etiquetas
 
 Se recomienda crear etiquetas para cada nueva versión publicada de un software. Este concepto no es nuevo, ya que estaba disponible en SVN. Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando
 
 `git tag 1.0.0 1b2e1d63ff`
 
-1b2e1d63ff se refiere a los 10 caracteres del commit id al cual quieres referirte con tu etiqueta. Puedes obtener el commit id con
+1b2e1d63ff se refiere a los 10 caracteres del commit id al cual quieres referirte con tu etiqueta. Puedes obtener el commit id con:
 
 `git log`
 
-también puedes usar menos caracteres que el commit id, pero debe ser un valor único.
-reemplaza cambios locales
-
-En caso de que hagas algo mal (lo que seguramente nunca suceda ;) puedes reemplazar cambios locales usando el comando
+También puedes usar menos carac.teres que el commit id, pero debe ser un valor único.
+Reemplaza cambios locales:
 
 `git checkout -- <filename>`
 
