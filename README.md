@@ -1,7 +1,7 @@
 # Control de versiones: Git
 [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://github.com/davidvelascogarcia/git)
 [![git Homepage](https://img.shields.io/badge/git-master-orange.svg)](https://github.com/davidvelascogarcia/git/tree/master/docs) [![Latest Release](https://img.shields.io/github/tag/davidvelascogarcia/git.svg?label=Latest%20Release)](https://github.com/davidvelascogarcia/git/tags)
-[![Build Status](https://travis-ci.org/davidvelascogarcia/git.svg?branch=master)](https://travis-ci.org/davidvelascogarcia/git)
+
 
 - [Introducción](#introduccion)
 - [Sintaxis](#sintaxis)
@@ -22,8 +22,6 @@ Se adjunta documentación sobre la sintaxis del control de versiones con `git`, 
 
 
 ## Status
-
-[![Build Status](https://travis-ci.org/davidvelascogarcia/git.svg?branch=master)](https://travis-ci.org/davidvelascogarcia/git)
 
 [![Issues](https://img.shields.io/github/issues/davidvelascogarcia/git.svg?label=Issues)](https://github.com/davidvelascogarcia/git/issues)
 
